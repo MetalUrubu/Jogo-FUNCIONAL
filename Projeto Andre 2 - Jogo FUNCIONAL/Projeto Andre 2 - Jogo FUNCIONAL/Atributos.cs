@@ -40,7 +40,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		
 		public void addAtributo(string atbt, int qntd)
 		{
-			if(Pontos-=qntd >=0)
+			if((Pontos-=qntd) >=0)
 			{
 				Pontos -= qntd;
 				switch(atbt)
@@ -62,21 +62,21 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			switch(atbt)
 			{
 				case "Força":
-					if(Forca -= qntd > 0)
+					if((Forca -= qntd) > 0)
 					{
 						Forca += qntd;
 						Pontos += qntd;
 					}
 					break;
 				case "Agilidade":
-					if(Agilidade -= qntd > 0)
+					if((Agilidade -= qntd) > 0)
 					{
 						Agilidade += qntd;
 						Pontos += qntd;
 					}
 					break;
 				case "Inteligencia":
-					if(Inteligencia -= qntd > 0)
+					if((Inteligencia -= qntd) > 0)
 					{
 						Inteligencia += qntd;
 						Pontos += qntd;
