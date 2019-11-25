@@ -7,6 +7,8 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 	{
 		public string Nome{get;set;}
 		public string Raca{get;set;}
+		public Atributos status;
+		public Classes magias;
 		public Jogador()
 		{
 		}
@@ -14,7 +16,19 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		{
 			Nome = n;
 			Raca = r;
-			//Adicionar switch para definição de classe
+			status = new Atributos(r);
+			switch(c)
+			{
+				case "Guerreiro":
+					magias = new Guerreiro();
+					break;
+				case "Arqueiro":
+					magias = new Arqueiro();
+					break;
+				case "Mago":
+					magias = new Mago();
+					break;
+			}
 		}
 	}
 }
