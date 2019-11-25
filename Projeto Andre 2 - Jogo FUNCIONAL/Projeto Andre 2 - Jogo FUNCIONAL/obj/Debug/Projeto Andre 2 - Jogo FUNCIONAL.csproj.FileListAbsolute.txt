@@ -1,0 +1,6 @@
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.csprojResolveAssemblyReference.cache
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\bin\Debug\Projeto Andre 2 - Jogo FUNCIONAL.exe.config
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\bin\Debug\Projeto Andre 2 - Jogo FUNCIONAL.exe
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\bin\Debug\Projeto Andre 2 - Jogo FUNCIONAL.pdb
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.exe
+C:\Users\marcopatrocinio\Documents\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.pdb
