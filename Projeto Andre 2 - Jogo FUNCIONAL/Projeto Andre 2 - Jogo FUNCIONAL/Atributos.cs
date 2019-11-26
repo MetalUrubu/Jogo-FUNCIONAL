@@ -37,39 +37,28 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 					break;
 			}
 		}
-	
-	public void subAtributo(string atbt, int qntd)
-	{
-		switch(atbt)
+		
+		public void subAtributo(string atbt, int qntd)
 		{
-			case "Força":
-				if((Forca -= qntd) > 0)
-				{
+			Pontos += qntd;
+			switch(atbt)
+			{
+				case "Força":
 					Forca -= qntd;
-					Pontos += qntd;
-				}
-				break;
-			case "Agilidade":
-				if((Agilidade -= qntd) > 0)
-				{
+					break;
+				case "Agilidade":
 					Agilidade -= qntd;
-					Pontos += qntd;
-				}
-				break;
-			case "Inteligencia":
-				if((Inteligencia -= qntd) > 0)
-				{
+					break;
+				case "Inteligencia":
 					Inteligencia -= qntd;
-					Pontos += qntd;
-				}
-				break;
+					break;
+			}
+		}
+		public void Evoluir()
+		{
+			Level += 1;
+			Pontos += 10;
 		}
 	}
-	public void Evoluir()
-	{
-		Level += 1;
-		Pontos += 10;
-	}
-}
 }
 
