@@ -12,5 +12,20 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		{
 			InitializeComponent();
 		}
+		void NovoJogoClick(object sender, EventArgs e)
+		{
+			Program.novoJogo = new Criacao();
+			Hide();
+			Program.novoJogo.Show();
+		}
+		void CarregarJogoClick(object sender, EventArgs e)
+		{
+			
+		}
+		void SairClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
 	}
 }

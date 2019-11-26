@@ -7,6 +7,8 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 	{
 		public static MainForm menuP;
 		public static Jogador usuario;
+		public static Criacao novoJogo;
+		public static AtributosForm atbtMenu;
 		[STAThread]
 		private static void Main(string[] args)
 		{
