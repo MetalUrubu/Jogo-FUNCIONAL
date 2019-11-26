@@ -16,7 +16,25 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		{
 			Nome = n;
 			Raca = r;
-			status = new Atributos(r);
+			status = new Atributos();
+			switch(r)
+			{
+				case "Humano":
+					status.addAtributo("Força",2);
+					status.addAtributo("Agilidade",5);
+					status.addAtributo("Inteligencia",3);
+					break;
+				case "Troll":
+					status.addAtributo("Força",5);
+					status.addAtributo("Agilidade",2);
+					status.addAtributo("Inteligencia",3);
+					break;
+				case "Elfo":
+					status.addAtributo("Força",2);
+					status.addAtributo("Agilidade",2);
+					status.addAtributo("Inteligencia",6);
+					break;
+			}
 			switch(c)
 			{
 				case "Guerreiro":
