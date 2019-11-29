@@ -1,24 +1,9 @@
-﻿/*
- * Created by SharpDevelop.
- * User: PC
- * Date: 26/11/2019
- * Time: 12:25
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-namespace Projeto_Andre_2___Jogo_FUNCIONAL
+﻿namespace Projeto_Andre_2___Jogo_FUNCIONAL
 {
 	partial class HistoriaForm
 	{
-		/// <summary>
-		/// Designer variable used to keep track of non-visual components.
-		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		
-		/// <summary>
-		/// Disposes resources used by the form.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing) {
@@ -29,11 +14,6 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			base.Dispose(disposing);
 		}
 		
-		/// <summary>
-		/// This method is required for Windows Forms designer support.
-		/// Do not change the method contents inside the source code editor. The Forms designer might
-		/// not be able to load this method if it was changed manually.
-		/// </summary>
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistoriaForm));
@@ -104,10 +84,12 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.Controls.Add(this.historiaLabel);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "HistoriaForm";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Faytdows Destiny";
 			((System.ComponentModel.ISupportInitialize)(this.imagemBox)).EndInit();
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.PictureBox imagemBox;
 		private System.Windows.Forms.Button proximoButton;

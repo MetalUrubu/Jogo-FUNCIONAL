@@ -13,15 +13,15 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.ManaMg2 = 2;
 			this.ManaMg3 = 3;
 		}
-		public override void Magia1()
+		public override void Magia1(Jogador j, Inimigo i)
 		{
 			
 		}
-		public override void Magia2()
+		public override void Magia2(Jogador j, Inimigo i)
 		{
 			
 		}
-		public override void Magia3()
+		public override void Magia3(Jogador j, Inimigo i)
 		{
 			
 		}

@@ -50,15 +50,76 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arqueiro.cs" />
+    <Compile Include="Atributos.cs" />
+    <Compile Include="AtributosForm.cs" />
+    <Compile Include="AtributosForm.Designer.cs">
+      <DependentUpon>AtributosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatalhaForm.cs" />
+    <Compile Include="BatalhaForm.Designer.cs">
+      <DependentUpon>BatalhaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs" />
+    <Compile Include="ClassesInfoForm.cs" />
+    <Compile Include="ClassesInfoForm.Designer.cs">
+      <DependentUpon>ClassesInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criacao.cs" />
+    <Compile Include="Criacao.Designer.cs">
+      <DependentUpon>Criacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guerreiro.cs" />
+    <Compile Include="HistoriaForm.cs" />
+    <Compile Include="HistoriaForm.Designer.cs">
+      <DependentUpon>HistoriaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inimigo.cs" />
+    <Compile Include="Jogador.cs" />
+    <Compile Include="Mago.cs" />
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuForm.cs" />
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RacasInfoForm.cs" />
+    <Compile Include="RacasInfoForm.Designer.cs">
+      <DependentUpon>RacasInfoForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AtributosForm.resx">
+      <DependentUpon>AtributosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatalhaForm.resx">
+      <DependentUpon>BatalhaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesInfoForm.resx">
+      <DependentUpon>ClassesInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criacao.resx">
+      <DependentUpon>Criacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoriaForm.resx">
+      <DependentUpon>HistoriaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RacasInfoForm.resx">
+      <DependentUpon>RacasInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

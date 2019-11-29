@@ -130,7 +130,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.arqueiroRadio.Size = new System.Drawing.Size(104, 24);
 			this.arqueiroRadio.TabIndex = 3;
 			this.arqueiroRadio.TabStop = true;
-			this.arqueiroRadio.Text = "Arrqueiro";
+			this.arqueiroRadio.Text = "Arqueiro";
 			this.arqueiroRadio.UseVisualStyleBackColor = true;
 			this.arqueiroRadio.CheckedChanged += new System.EventHandler(this.ArqueiroRadioCheckedChanged);
 			// 
@@ -215,7 +215,9 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.Controls.Add(this.nomeTextField);
 			this.Controls.Add(this.classeGroupBox);
 			this.Controls.Add(this.racaGroupBox);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "Criacao";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Novo Personagem";
 			this.racaGroupBox.ResumeLayout(false);
 			this.classeGroupBox.ResumeLayout(false);

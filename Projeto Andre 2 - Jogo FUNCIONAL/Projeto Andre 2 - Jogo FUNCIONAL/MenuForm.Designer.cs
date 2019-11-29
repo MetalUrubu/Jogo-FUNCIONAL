@@ -51,9 +51,9 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			// 
 			// retomarButton
 			// 
-			this.retomarButton.Location = new System.Drawing.Point(244, 323);
+			this.retomarButton.Location = new System.Drawing.Point(136, 270);
 			this.retomarButton.Name = "retomarButton";
-			this.retomarButton.Size = new System.Drawing.Size(206, 31);
+			this.retomarButton.Size = new System.Drawing.Size(100, 31);
 			this.retomarButton.TabIndex = 0;
 			this.retomarButton.Text = "Retornar";
 			this.retomarButton.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.atributosButton.ForeColor = System.Drawing.Color.Blue;
 			this.atributosButton.Location = new System.Drawing.Point(30, 33);
 			this.atributosButton.Name = "atributosButton";
-			this.atributosButton.Size = new System.Drawing.Size(187, 117);
+			this.atributosButton.Size = new System.Drawing.Size(100, 100);
 			this.atributosButton.TabIndex = 1;
 			this.atributosButton.UseVisualStyleBackColor = true;
 			this.atributosButton.Click += new System.EventHandler(this.AtributosButtonClick);
@@ -77,9 +77,9 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.magiaButtons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.magiaButtons.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.magiaButtons.ForeColor = System.Drawing.Color.Blue;
-			this.magiaButtons.Location = new System.Drawing.Point(258, 178);
+			this.magiaButtons.Location = new System.Drawing.Point(136, 164);
 			this.magiaButtons.Name = "magiaButtons";
-			this.magiaButtons.Size = new System.Drawing.Size(192, 117);
+			this.magiaButtons.Size = new System.Drawing.Size(100, 100);
 			this.magiaButtons.TabIndex = 2;
 			this.magiaButtons.UseVisualStyleBackColor = true;
 			this.magiaButtons.Click += new System.EventHandler(this.Button3Click);
@@ -88,18 +88,18 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			// 
 			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
 			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.button4.Location = new System.Drawing.Point(30, 178);
+			this.button4.Location = new System.Drawing.Point(30, 164);
 			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(187, 117);
+			this.button4.Size = new System.Drawing.Size(100, 100);
 			this.button4.TabIndex = 3;
 			this.button4.UseVisualStyleBackColor = true;
 			this.button4.Click += new System.EventHandler(this.Button4Click);
 			// 
 			// button5
 			// 
-			this.button5.Location = new System.Drawing.Point(30, 323);
+			this.button5.Location = new System.Drawing.Point(30, 270);
 			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(187, 31);
+			this.button5.Size = new System.Drawing.Size(100, 31);
 			this.button5.TabIndex = 4;
 			this.button5.Text = "Sair";
 			this.button5.UseVisualStyleBackColor = true;
@@ -108,35 +108,35 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			// 
 			this.forjaButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("forjaButton.BackgroundImage")));
 			this.forjaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.forjaButton.Location = new System.Drawing.Point(258, 33);
+			this.forjaButton.Location = new System.Drawing.Point(136, 33);
 			this.forjaButton.Name = "forjaButton";
-			this.forjaButton.Size = new System.Drawing.Size(192, 117);
+			this.forjaButton.Size = new System.Drawing.Size(100, 100);
 			this.forjaButton.TabIndex = 5;
 			this.forjaButton.UseVisualStyleBackColor = true;
 			// 
 			// magiasLabel
 			// 
-			this.magiasLabel.Location = new System.Drawing.Point(305, 153);
+			this.magiasLabel.Location = new System.Drawing.Point(136, 136);
 			this.magiasLabel.Name = "magiasLabel";
-			this.magiasLabel.Size = new System.Drawing.Size(102, 22);
+			this.magiasLabel.Size = new System.Drawing.Size(100, 25);
 			this.magiasLabel.TabIndex = 6;
 			this.magiasLabel.Text = "Magias";
 			this.magiasLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// atributosLabel
 			// 
-			this.atributosLabel.Location = new System.Drawing.Point(58, -1);
+			this.atributosLabel.Location = new System.Drawing.Point(30, 5);
 			this.atributosLabel.Name = "atributosLabel";
-			this.atributosLabel.Size = new System.Drawing.Size(130, 31);
+			this.atributosLabel.Size = new System.Drawing.Size(100, 25);
 			this.atributosLabel.TabIndex = 7;
 			this.atributosLabel.Text = "Atributos";
 			this.atributosLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// forjaLabel
 			// 
-			this.forjaLabel.Location = new System.Drawing.Point(292, -1);
+			this.forjaLabel.Location = new System.Drawing.Point(136, 5);
 			this.forjaLabel.Name = "forjaLabel";
-			this.forjaLabel.Size = new System.Drawing.Size(130, 31);
+			this.forjaLabel.Size = new System.Drawing.Size(100, 25);
 			this.forjaLabel.TabIndex = 8;
 			this.forjaLabel.Text = "Forja";
 			this.forjaLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,9 +144,9 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(58, 153);
+			this.label1.Location = new System.Drawing.Point(30, 136);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(118, 22);
+			this.label1.Size = new System.Drawing.Size(100, 25);
 			this.label1.TabIndex = 9;
 			this.label1.Text = "Loja";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -156,7 +156,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(469, 366);
+			this.ClientSize = new System.Drawing.Size(266, 315);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.forjaLabel);
 			this.Controls.Add(this.atributosLabel);
@@ -168,10 +168,12 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.Controls.Add(this.atributosButton);
 			this.Controls.Add(this.retomarButton);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "MenuForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "MenuForm";
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label forjaLabel;

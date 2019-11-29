@@ -7,32 +7,55 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 {
 	public partial class HistoriaForm : Form
 	{
-		static FileStream historia = new FileStream("Historia.txt", FileMode.Open);
-		static StreamReader sr = new StreamReader(historia);
-		static string todaHistoria  = sr.ReadToEnd();
-		public string[] historiaArray = todaHistoria.Split('\n');
-		int pagina;		
+		static string[] historias = Directory.GetFiles("historia Capitulos");
+		static FileStream historia; //= new FileStream(historias[Capitulo], FileMode.Open);
+		static StreamReader sr; //= new StreamReader(historia);
+		static string[] imagens = Directory.GetFiles("imagens");
+		static string todaHistoria;//  = sr.ReadToEnd();
+		static string[] historiaArray;// = todaHistoria.Split('\n');
+		public static int Pagina{get;set;}
+		public static int Capitulo{get;set;}
 		
 		public HistoriaForm()
 		{
 			InitializeComponent();
-			historiaLabel.Text = historiaArray[pagina];
+			historia = new FileStream(historias[Capitulo], FileMode.Open);
+			sr = new StreamReader(historia);
+			todaHistoria  = sr.ReadToEnd();
+			historiaArray = todaHistoria.Split('\n');
+			historiaLabel.Text = historiaArray[Pagina];
+			imagemBox.Image = Image.FromFile(imagens[Pagina]);
+			
 		}
 		
 		void ProximoButtonClick(object sender, EventArgs e)
 		{
-			if((pagina +2) > historiaArray.Length){
-				
-			}else{
-				historiaLabel.Text = historiaArray[++pagina];
-				imagemBox.Image = Image.FromFile("cavaleirodomal.jpg");
+			if((Pagina+2) > historiaArray.Length)
+			{
+				Program.batalha = new BatalhaForm();
+				Program.batalha.Show();
+				historia.Close();
+				sr.Close();
+				Close();
+			}
+			else
+			{
+				historiaLabel.Text = historiaArray[++Pagina];
+				imagemBox.Image = Image.FromFile(imagens[Pagina]);
 			}
 		}
 		
 		void AnteriorButtonClick(object sender, EventArgs e)
 		{
-			historiaLabel.Text = historiaArray[--pagina];
-			
+			if((Pagina-1) < 0)
+			{
+				
+			}
+			else
+			{
+				historiaLabel.Text = historiaArray[--Pagina];
+				imagemBox.Image = Image.FromFile(imagens[Pagina]);
+			}
 		}
 	}
 }
