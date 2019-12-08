@@ -51,6 +51,7 @@
 			this.menuButton.TabIndex = 2;
 			this.menuButton.Text = "Menu";
 			this.menuButton.UseVisualStyleBackColor = true;
+			this.menuButton.Click += new System.EventHandler(this.MenuButtonClick);
 			// 
 			// proximoButton
 			// 

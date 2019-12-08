@@ -39,24 +39,24 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
 			this.retomarButton = new System.Windows.Forms.Button();
 			this.atributosButton = new System.Windows.Forms.Button();
-			this.magiaButtons = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.magiasButton = new System.Windows.Forms.Button();
+			this.lojaButton = new System.Windows.Forms.Button();
 			this.forjaButton = new System.Windows.Forms.Button();
 			this.magiasLabel = new System.Windows.Forms.Label();
 			this.atributosLabel = new System.Windows.Forms.Label();
 			this.forjaLabel = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lojaLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// retomarButton
 			// 
-			this.retomarButton.Location = new System.Drawing.Point(136, 270);
+			this.retomarButton.Location = new System.Drawing.Point(83, 272);
 			this.retomarButton.Name = "retomarButton";
 			this.retomarButton.Size = new System.Drawing.Size(100, 31);
 			this.retomarButton.TabIndex = 0;
 			this.retomarButton.Text = "Retornar";
 			this.retomarButton.UseVisualStyleBackColor = true;
+			this.retomarButton.Click += new System.EventHandler(this.RetomarButtonClick);
 			// 
 			// atributosButton
 			// 
@@ -71,38 +71,27 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.atributosButton.UseVisualStyleBackColor = true;
 			this.atributosButton.Click += new System.EventHandler(this.AtributosButtonClick);
 			// 
-			// magiaButtons
+			// magiasButton
 			// 
-			this.magiaButtons.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("magiaButtons.BackgroundImage")));
-			this.magiaButtons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.magiaButtons.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.magiaButtons.ForeColor = System.Drawing.Color.Blue;
-			this.magiaButtons.Location = new System.Drawing.Point(136, 164);
-			this.magiaButtons.Name = "magiaButtons";
-			this.magiaButtons.Size = new System.Drawing.Size(100, 100);
-			this.magiaButtons.TabIndex = 2;
-			this.magiaButtons.UseVisualStyleBackColor = true;
-			this.magiaButtons.Click += new System.EventHandler(this.Button3Click);
+			this.magiasButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("magiasButton.BackgroundImage")));
+			this.magiasButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.magiasButton.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.magiasButton.ForeColor = System.Drawing.Color.Blue;
+			this.magiasButton.Location = new System.Drawing.Point(136, 164);
+			this.magiasButton.Name = "magiasButton";
+			this.magiasButton.Size = new System.Drawing.Size(100, 100);
+			this.magiasButton.TabIndex = 2;
+			this.magiasButton.UseVisualStyleBackColor = true;
 			// 
-			// button4
+			// lojaButton
 			// 
-			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.button4.Location = new System.Drawing.Point(30, 164);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(100, 100);
-			this.button4.TabIndex = 3;
-			this.button4.UseVisualStyleBackColor = true;
-			this.button4.Click += new System.EventHandler(this.Button4Click);
-			// 
-			// button5
-			// 
-			this.button5.Location = new System.Drawing.Point(30, 270);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(100, 31);
-			this.button5.TabIndex = 4;
-			this.button5.Text = "Sair";
-			this.button5.UseVisualStyleBackColor = true;
+			this.lojaButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lojaButton.BackgroundImage")));
+			this.lojaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.lojaButton.Location = new System.Drawing.Point(30, 164);
+			this.lojaButton.Name = "lojaButton";
+			this.lojaButton.Size = new System.Drawing.Size(100, 100);
+			this.lojaButton.TabIndex = 3;
+			this.lojaButton.UseVisualStyleBackColor = true;
 			// 
 			// forjaButton
 			// 
@@ -113,6 +102,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.forjaButton.Size = new System.Drawing.Size(100, 100);
 			this.forjaButton.TabIndex = 5;
 			this.forjaButton.UseVisualStyleBackColor = true;
+			this.forjaButton.Click += new System.EventHandler(this.ForjaButtonClick);
 			// 
 			// magiasLabel
 			// 
@@ -140,31 +130,28 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.forjaLabel.TabIndex = 8;
 			this.forjaLabel.Text = "Forja";
 			this.forjaLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.forjaLabel.Click += new System.EventHandler(this.ForjaLabelClick);
 			// 
-			// label1
+			// lojaLabel
 			// 
-			this.label1.Location = new System.Drawing.Point(30, 136);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 25);
-			this.label1.TabIndex = 9;
-			this.label1.Text = "Loja";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.label1.Click += new System.EventHandler(this.Label1Click);
+			this.lojaLabel.Location = new System.Drawing.Point(30, 136);
+			this.lojaLabel.Name = "lojaLabel";
+			this.lojaLabel.Size = new System.Drawing.Size(100, 25);
+			this.lojaLabel.TabIndex = 9;
+			this.lojaLabel.Text = "Loja";
+			this.lojaLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// MenuForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(266, 315);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lojaLabel);
 			this.Controls.Add(this.forjaLabel);
 			this.Controls.Add(this.atributosLabel);
 			this.Controls.Add(this.magiasLabel);
 			this.Controls.Add(this.forjaButton);
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.magiaButtons);
+			this.Controls.Add(this.lojaButton);
+			this.Controls.Add(this.magiasButton);
 			this.Controls.Add(this.atributosButton);
 			this.Controls.Add(this.retomarButton);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -175,15 +162,14 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.ResumeLayout(false);
 
 		}
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lojaLabel;
 		private System.Windows.Forms.Label forjaLabel;
 		private System.Windows.Forms.Label atributosLabel;
 		private System.Windows.Forms.Label magiasLabel;
 		private System.Windows.Forms.Button forjaButton;
-		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button magiaButtons;
+		private System.Windows.Forms.Button lojaButton;
 		private System.Windows.Forms.Button atributosButton;
 		private System.Windows.Forms.Button retomarButton;
+		private System.Windows.Forms.Button magiasButton;
 	}
 }

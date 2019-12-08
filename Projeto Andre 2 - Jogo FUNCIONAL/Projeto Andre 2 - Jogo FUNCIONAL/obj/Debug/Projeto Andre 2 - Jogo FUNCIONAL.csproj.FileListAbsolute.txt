@@ -36,3 +36,7 @@ E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo
 E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.csproj.GenerateResource.Cache
 E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.exe
 E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto Andre 2 - Jogo FUNCIONAL.pdb
+I:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto_Andre_2___Jogo_FUNCIONAL.PocoesForm.resources
+E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto_Andre_2___Jogo_FUNCIONAL.PocoesForm.resources
+E:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto_Andre_2___Jogo_FUNCIONAL.ForjaForm.resources
+I:\SharpDevelop Projects\Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL\obj\Debug\Projeto_Andre_2___Jogo_FUNCIONAL.ForjaForm.resources

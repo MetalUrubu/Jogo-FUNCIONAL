@@ -16,7 +16,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		public int Armadura{get;set;}
 		public int Level{get;set;}
 		public int Pontos{get;set;}
-		
+		public bool verificarArmadura{get;set;}
 		public Atributos()
 		{
 			Pontos += 20;
@@ -29,7 +29,10 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		
 		public void addAtributo(string atbt, int qntd)
 		{
-			Pontos -= qntd;
+			if(!verificarArmadura)
+			{
+				Pontos -= qntd;
+			}
 			switch(atbt)
 			{
 				case "Força":

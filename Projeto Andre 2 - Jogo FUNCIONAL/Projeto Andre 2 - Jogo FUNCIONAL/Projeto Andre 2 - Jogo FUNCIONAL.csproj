@@ -69,6 +69,11 @@
     <Compile Include="Criacao.Designer.cs">
       <DependentUpon>Criacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForjaClass.cs" />
+    <Compile Include="ForjaForm.cs" />
+    <Compile Include="ForjaForm.Designer.cs">
+      <DependentUpon>ForjaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Guerreiro.cs" />
     <Compile Include="HistoriaForm.cs" />
     <Compile Include="HistoriaForm.Designer.cs">
@@ -84,6 +89,11 @@
     <Compile Include="MenuForm.cs" />
     <Compile Include="MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pocoesClasse.cs" />
+    <Compile Include="PocoesForm.cs" />
+    <Compile Include="PocoesForm.Designer.cs">
+      <DependentUpon>PocoesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +118,9 @@
     <EmbeddedResource Include="Criacao.resx">
       <DependentUpon>Criacao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForjaForm.resx">
+      <DependentUpon>ForjaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HistoriaForm.resx">
       <DependentUpon>HistoriaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocoesForm.resx">
+      <DependentUpon>PocoesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RacasInfoForm.resx">
       <DependentUpon>RacasInfoForm.cs</DependentUpon>

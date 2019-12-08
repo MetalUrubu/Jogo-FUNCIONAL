@@ -7,8 +7,12 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 	{
 		public string Nome{get;set;}
 		public string Raca{get;set;}
+		public string Classe{get;set;}
 		public Atributos status;
 		public Classes magias;
+		public pocoesClasse pocoes;
+		public ForjaClass itens;
+		
 		public Jogador()
 		{
 		}
@@ -16,7 +20,10 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		{
 			Nome = n;
 			Raca = r;
+			Classe = c;
 			status = new Atributos();
+			pocoes = new pocoesClasse();
+			itens = new ForjaClass(this);
 			switch(r)
 			{
 				case "Humano":
@@ -47,6 +54,7 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 					magias = new Mago();
 					break;
 			}
+			
 		}
 	}
 }

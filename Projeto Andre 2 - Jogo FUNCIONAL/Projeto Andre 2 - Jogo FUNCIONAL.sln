@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto Andre 2 - Jogo FUNCIONAL", "Projeto Andre 2 - Jogo FUNCIONAL\Projeto Andre 2 - Jogo FUNCIONAL.csproj", "{0452516C-F82D-4AD7-B9F8-07EDCBFA16D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0452516C-F82D-4AD7-B9F8-07EDCBFA16D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0452516C-F82D-4AD7-B9F8-07EDCBFA16D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0452516C-F82D-4AD7-B9F8-07EDCBFA16D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0452516C-F82D-4AD7-B9F8-07EDCBFA16D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

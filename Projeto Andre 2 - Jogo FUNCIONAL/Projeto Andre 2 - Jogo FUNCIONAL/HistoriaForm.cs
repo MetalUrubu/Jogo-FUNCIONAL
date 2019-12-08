@@ -57,5 +57,13 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 				imagemBox.Image = Image.FromFile(imagens[Pagina]);
 			}
 		}
+		void MenuButtonClick(object sender, EventArgs e)
+		{
+			Program.menuS = new MenuForm();
+			Program.menuS.Show();
+			historia.Close();
+			sr.Close();
+			Close();
+		}
 	}
 }

@@ -15,26 +15,30 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		private System.Windows.Forms.Label magia1Label;
 		private System.Windows.Forms.Label magia2Label;
 		private System.Windows.Forms.Label magia3Label;
-		private System.Windows.Forms.ProgressBar vidaJogadorBar;
+		public System.Windows.Forms.ProgressBar vidaJogadorBar;
 		private System.Windows.Forms.Label vidaJogadorLabel;
 		private System.Windows.Forms.Button passarButton;
 		private System.Windows.Forms.Button atacarButton;
 		private System.Windows.Forms.Label bar2Label;
-		private System.Windows.Forms.ProgressBar vidaInimigoBar;
+		public System.Windows.Forms.ProgressBar vidaInimigoBar;
 		private System.Windows.Forms.Label passarLabel;
 		private System.Windows.Forms.Label atacarLabel;
 		private System.Windows.Forms.Button sairButton;
 		private System.Windows.Forms.Button menuButton;
 		private System.Windows.Forms.Button magiasMenuButtton;
 		private System.Windows.Forms.Button atributosMenuButton;
-		private System.Windows.Forms.Button pocoesButton;
-		private System.Windows.Forms.Label pocoesLabel;
 		private System.Windows.Forms.Label barLabel;
 		private System.Windows.Forms.Label manaJogadorLabel;
 		private System.Windows.Forms.Label nomeInimigoLabel;
 		private System.Windows.Forms.Label magia1RecargaLabel;
 		private System.Windows.Forms.Label magia2RecargaLabel;
 		private System.Windows.Forms.Label magia3RecargaLabel;
+		private System.Windows.Forms.Button pocaoVidaButton;
+		private System.Windows.Forms.Button pocaoManaButton;
+		private System.Windows.Forms.Button pocaoDanoButton;
+		private System.Windows.Forms.Label pocaoVidaLabel;
+		private System.Windows.Forms.Label pocaoManaLabel;
+		private System.Windows.Forms.Label pocaoDanoLabel;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -77,14 +81,18 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.menuButton = new System.Windows.Forms.Button();
 			this.magiasMenuButtton = new System.Windows.Forms.Button();
 			this.atributosMenuButton = new System.Windows.Forms.Button();
-			this.pocoesButton = new System.Windows.Forms.Button();
-			this.pocoesLabel = new System.Windows.Forms.Label();
 			this.barLabel = new System.Windows.Forms.Label();
 			this.manaJogadorLabel = new System.Windows.Forms.Label();
 			this.nomeInimigoLabel = new System.Windows.Forms.Label();
 			this.magia1RecargaLabel = new System.Windows.Forms.Label();
 			this.magia2RecargaLabel = new System.Windows.Forms.Label();
 			this.magia3RecargaLabel = new System.Windows.Forms.Label();
+			this.pocaoVidaButton = new System.Windows.Forms.Button();
+			this.pocaoManaButton = new System.Windows.Forms.Button();
+			this.pocaoDanoButton = new System.Windows.Forms.Button();
+			this.pocaoVidaLabel = new System.Windows.Forms.Label();
+			this.pocaoManaLabel = new System.Windows.Forms.Label();
+			this.pocaoDanoLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// vidaInimigoLabel
@@ -270,23 +278,6 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.atributosMenuButton.Text = "Atributos";
 			this.atributosMenuButton.UseVisualStyleBackColor = true;
 			// 
-			// pocoesButton
-			// 
-			this.pocoesButton.Location = new System.Drawing.Point(125, 250);
-			this.pocoesButton.Name = "pocoesButton";
-			this.pocoesButton.Size = new System.Drawing.Size(50, 50);
-			this.pocoesButton.TabIndex = 24;
-			this.pocoesButton.UseVisualStyleBackColor = true;
-			// 
-			// pocoesLabel
-			// 
-			this.pocoesLabel.Location = new System.Drawing.Point(125, 222);
-			this.pocoesLabel.Name = "pocoesLabel";
-			this.pocoesLabel.Size = new System.Drawing.Size(50, 25);
-			this.pocoesLabel.TabIndex = 25;
-			this.pocoesLabel.Text = "Poções";
-			this.pocoesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
 			// barLabel
 			// 
 			this.barLabel.Location = new System.Drawing.Point(12, 347);
@@ -341,19 +332,77 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 			this.magia3RecargaLabel.Text = "Recarga: 0";
 			this.magia3RecargaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
+			// pocaoVidaButton
+			// 
+			this.pocaoVidaButton.Location = new System.Drawing.Point(125, 250);
+			this.pocaoVidaButton.Name = "pocaoVidaButton";
+			this.pocaoVidaButton.Size = new System.Drawing.Size(50, 50);
+			this.pocaoVidaButton.TabIndex = 32;
+			this.pocaoVidaButton.UseVisualStyleBackColor = true;
+			this.pocaoVidaButton.Click += new System.EventHandler(this.PocaoVidaButtonClick);
+			// 
+			// pocaoManaButton
+			// 
+			this.pocaoManaButton.Location = new System.Drawing.Point(181, 250);
+			this.pocaoManaButton.Name = "pocaoManaButton";
+			this.pocaoManaButton.Size = new System.Drawing.Size(50, 50);
+			this.pocaoManaButton.TabIndex = 33;
+			this.pocaoManaButton.UseVisualStyleBackColor = true;
+			this.pocaoManaButton.Click += new System.EventHandler(this.PocaoManaButtonClick);
+			// 
+			// pocaoDanoButton
+			// 
+			this.pocaoDanoButton.Location = new System.Drawing.Point(237, 250);
+			this.pocaoDanoButton.Name = "pocaoDanoButton";
+			this.pocaoDanoButton.Size = new System.Drawing.Size(50, 50);
+			this.pocaoDanoButton.TabIndex = 34;
+			this.pocaoDanoButton.UseVisualStyleBackColor = true;
+			this.pocaoDanoButton.Click += new System.EventHandler(this.PocaoDanoButtonClick);
+			// 
+			// pocaoVidaLabel
+			// 
+			this.pocaoVidaLabel.Location = new System.Drawing.Point(125, 224);
+			this.pocaoVidaLabel.Name = "pocaoVidaLabel";
+			this.pocaoVidaLabel.Size = new System.Drawing.Size(50, 23);
+			this.pocaoVidaLabel.TabIndex = 35;
+			this.pocaoVidaLabel.Text = "Possui: 0";
+			this.pocaoVidaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// pocaoManaLabel
+			// 
+			this.pocaoManaLabel.Location = new System.Drawing.Point(181, 224);
+			this.pocaoManaLabel.Name = "pocaoManaLabel";
+			this.pocaoManaLabel.Size = new System.Drawing.Size(50, 23);
+			this.pocaoManaLabel.TabIndex = 36;
+			this.pocaoManaLabel.Text = "Possui: 0";
+			this.pocaoManaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// pocaoDanoLabel
+			// 
+			this.pocaoDanoLabel.Location = new System.Drawing.Point(237, 224);
+			this.pocaoDanoLabel.Name = "pocaoDanoLabel";
+			this.pocaoDanoLabel.Size = new System.Drawing.Size(50, 23);
+			this.pocaoDanoLabel.TabIndex = 37;
+			this.pocaoDanoLabel.Text = "Possui: 0";
+			this.pocaoDanoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
 			// BatalhaForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(684, 408);
+			this.Controls.Add(this.pocaoDanoLabel);
+			this.Controls.Add(this.pocaoManaLabel);
+			this.Controls.Add(this.pocaoVidaLabel);
+			this.Controls.Add(this.pocaoDanoButton);
+			this.Controls.Add(this.pocaoManaButton);
+			this.Controls.Add(this.pocaoVidaButton);
 			this.Controls.Add(this.magia3RecargaLabel);
 			this.Controls.Add(this.magia2RecargaLabel);
 			this.Controls.Add(this.magia1RecargaLabel);
 			this.Controls.Add(this.nomeInimigoLabel);
 			this.Controls.Add(this.manaJogadorLabel);
 			this.Controls.Add(this.barLabel);
-			this.Controls.Add(this.pocoesLabel);
-			this.Controls.Add(this.pocoesButton);
 			this.Controls.Add(this.atributosMenuButton);
 			this.Controls.Add(this.magiasMenuButtton);
 			this.Controls.Add(this.menuButton);

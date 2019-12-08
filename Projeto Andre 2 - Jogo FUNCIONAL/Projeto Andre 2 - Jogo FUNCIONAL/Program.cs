@@ -12,6 +12,9 @@ namespace Projeto_Andre_2___Jogo_FUNCIONAL
 		public static HistoriaForm historiaMenu;
 		public static BatalhaForm batalha;
 		public static Inimigo inimigo = new Inimigo("Cavaleiro Verde",200,30);
+		public static PocoesForm loja;
+		public static MenuForm menuS;
+		public static ForjaForm forja;
 		[STAThread]
 		private static void Main(string[] args)
 		{
